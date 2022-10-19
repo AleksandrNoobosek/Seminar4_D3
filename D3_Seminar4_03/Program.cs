@@ -30,7 +30,7 @@ int OddNumbers(int []array)
 int countneg = 0;
     for(int index = 0; index < array.Length; index++)
         {
-        if (array[index]%2==1)
+        if (array[index]%2!=0)
             countneg = countneg + 1;
         }
     return countneg;
