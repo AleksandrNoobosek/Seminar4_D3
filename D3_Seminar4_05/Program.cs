@@ -20,7 +20,7 @@ int SumOddArr(int[] array)
 int SumOdd = 0;
     for(int index = 0;index < array.Length; index++)
     {
-    if (index%2==1)                           // стоящих на нечетной позиции
+    if (index%2!=0)                           // стоящих на нечетной позиции
         {
             SumOdd = SumOdd + array[index]; //Найти сумму чисел одномерного массива 
         }
@@ -37,7 +37,7 @@ Console.WriteLine();
 
 int[] array = new int[size];
 
-FillArray(array,1,4);
+FillArray(array,-5,5);
 
 Console.Write("Ваш массив: ");   
 
